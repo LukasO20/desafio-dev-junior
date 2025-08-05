@@ -12,16 +12,22 @@ Estrutura de productsMap = {
     - filter: Produto[] lista filtrada, com base na busca
 }
 
+Estrutura de messageCartMap = {
+    - message: String armazenar uma mensagem personalizada
+    - message: String armazenar uma color
+}
+
 */
 import { createContext, useContext, useState, useEffect } from 'react';
 
-import { productsMap } from '@/utils/mappingUtils';
+import { productsMap, messageCartMap } from '@/utils/mappingUtils';
 
 const ProductsContext = createContext([]);
 
 export function ProductsProvider({ children }) {
     const [products, setProducts] = useState(productsMap);
     const [productsCart, setProductsCart] = useState([]);
+    const [messageCart, setMessageCart] = useState(messageCartMap);
 
     const addProduct = (newProduct) => {
         setProductsCart(prevProduct => {
@@ -29,11 +35,19 @@ export function ProductsProvider({ children }) {
             if (alreadyExists) return prevProduct;
             return [...prevProduct, newProduct];
         });
+
+        setMessageCart(prevMessage => {
+            return { ...prevMessage, message: "Product added to cart!", bgcolor: "bg-sky-600" }
+        });
     };
 
     const removeProduct = (removeProduct) => {
         setProductsCart(prevProduct => {
             return prevProduct.filter(product => product.id !== removeProduct.id);
+        });
+        
+        setMessageCart(prevMessage => {
+            return { ...prevMessage, message: "Product removed of cart!", bgcolor: "bg-red-600" }
         });
     };
 
@@ -53,6 +67,7 @@ export function ProductsProvider({ children }) {
         <ProductsContext.Provider value={{
             products,
             productsCart,
+            messageCart,
             addProduct,
             removeProduct,
             setProducts

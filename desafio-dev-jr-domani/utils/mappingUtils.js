@@ -11,3 +11,8 @@ export const productsMap = {
     list: [],
     filter: []
 }
+
+export const messageCartMap = {
+    message: "",
+    bgcolor: ""
+}

@@ -21,17 +21,17 @@ export default function ShoppingCart() {
                 <Button visible={visibleMap(null)} icon={<FaX />} />
                 <h1 className="w-full flex justify-center gap-2 items-center font-bold"><FaCartShopping />Shopping Cart</h1>
             </div>
-            <div className="flex flex-col gap-2 items-center w-full overflow-hidden">
+            <div className="flex flex-col w-full gap-2 items-center overflow-hidden">
                 {
                     counter ?
                         <>
                             <div className="flex items-center p-2 gap-2">
                                 <span>{counter}</span><label>{counter === 1 ? "item" : "itens"}</label>
                             </div>
-                            <div className="flex flex-col gap-2 overflow-hidden hover:overflow-auto scrollbar-thin">
+                            <div className="flex flex-col w-full gap-2 overflow-hidden hover:overflow-auto scrollbar-thin">
                                 {
                                     productsCart.map(product =>
-                                        <div key={product.id} className="w-full bg-gray-100 p-4 rounded-xl">
+                                        <div key={product.id} className="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
                                             <div className="flex flex-col p-2 gap-2 items-center rounded-xl">
                                                 <label className="text-center" title={product.title}>{product.title}</label>
                                                 <img src={product.image} className="w-40 h-40" />

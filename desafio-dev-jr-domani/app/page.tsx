@@ -7,6 +7,7 @@ import Product from "@/components/products";
 import ShoppingCart from "@/components/shoppingcart";
 import Header from "@/components/header";
 import SearchBar from "@/components/searchbar";
+import MessagePopUp from "@/components/messagepopup";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-4 grid-rows-3 gap-5 p-4">
           <Product />
+          <MessagePopUp />
         </div>
         <ShoppingCart />
       </VisibilityProvider>
