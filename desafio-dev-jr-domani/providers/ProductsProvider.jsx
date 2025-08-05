@@ -4,8 +4,8 @@
 
 - ProductsProvider gerencia o estado dos produtos, tanto na lista principal como no carrinho
 - Métodos disponíveis:
-    addProduct - Caso precise evetuar uma ação de adicionar produto
-    removeProduct - Caso precise evetuar uma ação de remover produto
+    addProduct - Caso precise efetuar uma ação de adicionar produto
+    removeProduct - Caso precise efetuar uma ação de remover produto
 
 Estrutura de productsMap = {
     - list: Produto[] lista principal de produtos

@@ -7,7 +7,7 @@ import { useProducts } from "@/providers/ProductsProvider";
 
 - MessagePopUp exibe um pequeno balão pop-up e se esconde a cada 3 segundos
 
-Obs: por padrão o será usado productsCart de "useProducts" para gerenciar as mensagens
+Obs: por padrão será usado productsCart de "useProducts" para gerenciar as mensagens
 
 */
 
