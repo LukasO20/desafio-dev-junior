@@ -1,21 +1,21 @@
-# Virtual Buy! - A Web App to buy your favorite products in any moment!
+# Virtual Buy! - Uma aplicação web para comprar seus produtos favoritos a qualquer momento!
 
-**Virtual Buy!** is a modern web application designed to help you explore shopping in a online way.
+**Virtual Buy!** é uma aplicação web moderna desenvolvida para oferecer uma experiência de compras online de forma simples e intuitiva.
 
-## Features
+## Funcionalidades
 
-**Shopping View:** Browse and choose any product you want to purchase.
+**Página inicial:** Navegue e escolha qualquer produto que deseja adquirir.
 ![Screen main view](./desafio-dev-jr-domani/public/shopping_view.png)
 
-**Shopping Cart:** Manage your selected items in the cart. Any product you've added can be removed here.
+**Carrinho:** Gerencie os itens selecionados no carrinho. Qualquer produto adicionado pode ser removido aqui.
 ![Screen cart view](./desafio-dev-jr-domani/public/shopping_cart.png)
 
-**Search:** Easily search for products within the Shopping View.
+**Barra de pesquisa:** Pesquise produtos facilmente dentro da barra de pesquisa. Qualquer item pesquisado encontrado possui um botão de atalho para adicionar ao carrinho.
 ![Screen search view](./desafio-dev-jr-domani/public/shopping_search.png)
 
-**Add to Cart Button:** Allows you to quickly <img src="./desafio-dev-jr-domani/public/shopping_add.png" alt="Add button" width="75"/> items to your cart with a single click.
+**Botão de Adicionar ao Carrinho:** Permite adicionar <img src="./desafio-dev-jr-domani/public/shopping_add.png" alt="Botão adicionar" width="75"/> rapidamente produtos ao carrinho com um único clique.
 
-**Remove from Cart Button:** Enables you to <img src="./desafio-dev-jr-domani/public/shopping_remove.png" alt="Remove button" width="75"/> any unwanted item from your cart effortlessly.
+**Botão de Remover do Carrinho:** Permite remover <img src="./desafio-dev-jr-domani/public/shopping_remove.png" alt="Botão remover" width="75"/> facilmente qualquer item indesejado do carrinho.
 
 ## 🔗 Deploy
-Project available at https://dev-jr-desafio-temporary.vercel.app/ — a virtual store built with **Next.js** and hosted on **Vercel**.
+Projeto disponível em https://dev-jr-desafio-temporary.vercel.app/ — uma loja virtual desenvolvida com **Next.js** e hospedada na **Vercel**.
